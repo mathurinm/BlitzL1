@@ -1,3 +1,4 @@
+print("Using mathurinm version of blitzl1")
 from ._blitzl1 import LassoProblem
 from ._blitzl1 import LogRegProblem
 

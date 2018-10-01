@@ -2,7 +2,7 @@ import distutils
 from distutils.core import setup, Extension
 import os
 
-source_list = ["src/%s" % f for f in os.listdir("src") 
+source_list = ["src/%s" % f for f in os.listdir("src")
                             if f.endswith("cpp")]
 
 ext = Extension("blitzl1.libblitzl1",
@@ -14,7 +14,7 @@ setup(
   name = "blitzl1",
   version = "0.0.1",
   description = "Fast, principled, L1-regularized loss minimization",
-  package_dir = {"blitzl1": "python"},
+  package_dir = {"blitzl1": "blitzl1"},
   packages = ["blitzl1"],
   ext_modules = [ext],
   author = "Tyler B. Johnson",
